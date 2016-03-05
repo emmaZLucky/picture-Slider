@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A picture-slider plug-in by jQuery</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="picSlider.css" />
+</head>
+<body>
+<div id="slider">
+    <div  class="picSlider">
+        <a href="#">
+            <img src="img/01.jpg" alt="01" title="first pic"/>
+        </a>
+        <a href="#">
+            <img src="img/02.jpg" alt="02" title="second pic"/>
+        </a>
+        <a href="#">
+            <img src="img/03.jpg" alt="03" title="third pic"/>
+        </a>
+    </div>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.picSlider.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".picSlider").pictureSlider({
+            dotstyle: "dotStyle-Puff",
+            pauseTime: "1000"
+        });
+    })
+</script>
+
+</body>
+</html>
